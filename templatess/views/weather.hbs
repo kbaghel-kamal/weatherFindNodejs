@@ -1,0 +1,36 @@
+{{>head}}
+
+<body> {{>navbar}}
+     <div class="container-fluid" >
+        <div class="search col-md-10 col-12 mx-auto ">
+            <form class=" form container-fluid ">
+                <input  type="text" placeholder="Enter your city Name" aria-label="Search" id="cityName" autocomplete="off">
+                <input id="submission" value="search" type="submit"></input>
+            </form>
+        </div>
+ 
+        <div class="container align-items-center my-5  ">
+                   <div class="errorPart hide_err container " id="errShow">
+                   </div>
+            <div class="container_weather main_content hide_info ">
+                <div class="weather">
+                <div class="wave_one"></div>
+                <div class="wave_two"></div>
+                <div class="wave_three"></div>
+                <div id="weathercon"><i class='fas fa-sun' style='color:yellow;'></i></div>
+                <p id="weather_mood" class="weather_text">kamal</p>
+                 </div> 
+                <div class="info">
+                    <h2 class="location" id="location"><i class="fas fa-street-view"
+                            style="color: rgb(167, 93, 144);font-size: 3rem;"></i><span id="city"></span>,<span id="country"></span> </h2>
+                    <p id="date"></p>
+                    <h1 class="temp"><span id="temperature"></span> °C</h1>
+                    <h3 class="min_max_temperature" >min - <span id="min_temp"></span> °C | max - <span id="max_temp"></span>°C</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{>footer}}
+</body>
+<script src="js/main.js"></script> 
+</html>
